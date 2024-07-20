@@ -1,0 +1,113 @@
+QUERY PROVIDED:
+Write a ChatGPT Prompt which takes your Resume as input and parse the content in JSON format. Share Github Link of the solution if possible.
+
+SOLUTION:
+
+PROMPT PROVIDED BY ME:
+I have a resume in text format, and I'd like to parse its content into JSON format. The resume includes sections such as Personal Information, Skills, Work Experience, Education, and Projects. 
+Could you help me create a JSON object from this resume? 
+Here is the resume content: 
+Latika Mishra JK Colony ● Kanpur, 208010 latika.misra_cs.aiml21@gla.ac.in ● +91 8273337401 LinkedIn ● GitHub ● LeetCode 
+EDUCATION 
+Bachelor of Engineering in Computer Science (AIML), GLA University, Mathura; CGPA:7.68/10 June 2025 
+St. Josephs’ Senior Secondary School, Kanpur; Percentage: 83.8% May 2021 
+St. Josephs’ Senior Secondary School, Kanpur; Percentage: 85.6% May 2019 
+INTERNSHIP/TRAINING EXPERIENCE 
+Job Oriented Value-Added Course, GLA University, Mathura June 2023 – July 2023 
+Trainee • Hands on practice with Amazon Web Server, Pipelines, Docker. 
+• Hosted Website on AWS Server. 
+PROJECTS 
+Question Answering System (Link) 
+• The system loads and splits PDF documents, embeds text for similarity search, and sets up a QA system that retrieves relevant information from documents based on user queries. 
+• Libraries: LangChain, Pinecone, GooglePalm APIs. 
+MRI via CNN (Link) 
+• Built a CNN model for image classification using Tensorflow and Keras. The workflow includes loading and preprocessing image data, training the model, evaluating its performance, and visualizing results. 
+• Libraries: Pandas, Numpy, Matplotlib, Seaborn, PIL, SkLearn, tensorflow.keras, Shap. 
+Hosted Website on AWS Server 
+• Hosted a website using Amazon EC2 and set up a trigger point with CloudWatch. If the website exceeded a specific threshold value, CloudWatch would automatically terminate the EC2 instance hosting the website. 
+• Tools used: AWS, Pipelines, Docker, EC2 Instance, ECR. SKILLS Technical: Java, Python, JavaScript, Machine Learning Framework/ Libraries: Pandas, NumPy, Matplotlib, Scikit-learn, PIL, LangChain, PyTorch Developers Tools: Git/GitHub, VS Code Soft Skills: Problem Solving, Critical Thinking, Communication, Teamwork, Adaptability PROFESSIONAL ACHIEVEMENTS/ INSIGHTS • Winner of GLAThon as well as 2nd runner up of TechaThon an Intra University Hackathon. • Solved 250+ questions on LeetCode. • Completed certifications on ML, AWS, Azure AI and Python (Link for Certificates). CO-CURRICULAR ACTIVITIES • Event Management associate at GFG Student Chapter at GLAU. • Hosted Entrevista on behalf of GFG GLAU. • Orator at E-Conclave’22 by E-Cell GLAU. DECLARATION I hereby declare that all the above mentioned information is true and correct to the best of my knowledge. 
+
+
+
+SOLUTION PROVIDED BY CHATGPT:
+
+{
+  "PersonalInformation": {
+    "Name": "Latika Mishra",
+    "Contact": {
+      "Address": "JK Colony, Kanpur, 208010",
+      "Email": "latika.misra_cs.aiml21@gla.ac.in",
+      "Phone": "+91 8273337401",
+      "LinkedIn": "",
+      "GitHub": "",
+      "LeetCode": ""
+    }
+  },
+  "Education": [
+    {
+      "Degree": "Bachelor of Engineering in Computer Science (AIML)",
+      "Institution": "GLA University, Mathura",
+      "CGPA": "7.68/10",
+      "Year": "June 2025"
+    },
+    {
+      "Institution": "St. Josephs’ Senior Secondary School, Kanpur",
+      "Percentage": "83.8%",
+      "Year": "May 2021"
+    },
+    {
+      "Institution": "St. Josephs’ Senior Secondary School, Kanpur",
+      "Percentage": "85.6%",
+      "Year": "May 2019"
+    }
+  ],
+  "InternshipTrainingExperience": [
+    {
+      "Course": "Job Oriented Value-Added Course",
+      "Institution": "GLA University, Mathura",
+      "Duration": "June 2023 – July 2023",
+      "Role": "Trainee",
+      "Responsibilities": [
+        "Hands on practice with Amazon Web Server, Pipelines, Docker.",
+        "Hosted Website on AWS Server."
+      ]
+    }
+  ],
+  "Projects": [
+    {
+      "Title": "Question Answering System",
+      "Link": "",
+      "Description": "The system loads and splits PDF documents, embeds text for similarity search, and sets up a QA system that retrieves relevant information from documents based on user queries.",
+      "Libraries": ["LangChain", "Pinecone", "GooglePalm APIs"]
+    },
+    {
+      "Title": "MRI via CNN",
+      "Link": "",
+      "Description": "Built a CNN model for image classification using Tensorflow and Keras . The workflow includes loading and preprocessing image data, training the model, evaluating its performance, and visualizing results.",
+      "Libraries": ["Pandas", "Numpy", "Matplotlib", "Seaborn", "PIL", "SkLearn", "tensorflow.keras", "Shap"]
+    },
+    {
+      "Title": "Hosted Website on AWS Server",
+      "Description": "Hosted a website using Amazon EC2 and set up a trigger point with CloudWatch. If the website exceeded a specific threshold value, CloudWatch would automatically terminate the EC2 instance hosting the website.",
+      "Tools": ["AWS", "Pipelines", "Docker", "EC2 Instance", "ECR"]
+    }
+  ],
+  "Skills": {
+    "Technical": ["Java", "Python", "JavaScript", "Machine Learning"],
+    "FrameworkLibraries": ["Pandas", "NumPy", "Matplotlib", "Scikit-learn", "PIL", "LangChain", "PyTorch"],
+    "DeveloperTools": ["Git/GitHub", "VS Code"],
+    "SoftSkills": ["Problem Solving", "Critical Thinking", "Communication", "Teamwork", "Adaptability"]
+  },
+  "ProfessionalAchievementsInsights": [
+    "Winner of GLAThon as well as 2nd runner up of TechaThon an Intra University Hackathon.",
+    "Solved 250+ questions on LeetCode.",
+    "Completed certifications on ML, AWS, Azure AI and Python (Link for Certificates)."
+  ],
+  "CoCurricularActivities": [
+    "Event Management associate at GFG Student Chapter at GLAU.",
+    "Hosted Entrevista on behalf of GFG GLAU.",
+    "Orator at E-Conclave’22 by E-Cell GLAU."
+  ],
+  "Declaration": "I hereby declare that all the above mentioned information is true and correct to the best of my knowledge."
+}
+
